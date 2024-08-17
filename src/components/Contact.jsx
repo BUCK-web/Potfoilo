@@ -7,9 +7,6 @@ import { SectionWrapper } from "./Hoc";
 import { slideIn } from "../utils/motion";
 import { e } from "maath/dist/index-0332b2ed.esm";
 
-// template_1jtmgbd
-// template_ue6pu6f
-// XXFrRKLgI6o8fFwCS
 const Contact = () => {
   const formRef = useRef();
   const [Form, setForm] = useState({

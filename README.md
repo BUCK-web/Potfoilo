@@ -51,7 +51,7 @@ Here are some of my notable projects:
 
 I would love to connect! You can reach me at:
 
-- **Email**: [your-email@example.com]
+- **Email**: [shokatshahin0@gmail.com]
 - **LinkedIn**: [your-linkedin-profile]
 - **GitHub**: [your-github-profile]
 

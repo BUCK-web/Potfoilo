@@ -6,7 +6,6 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "./Hoc";
 import { slideIn } from "../utils/motion";
 
-
 const Contact = () => {
   const formRef = useRef();
   const [Form, setForm] = useState({
@@ -22,27 +21,39 @@ const Contact = () => {
 
   const handlesubmit = (e) => {
     e.preventDefault();
-    setLoading(true);
-    emailjs.send("service_y5l3cjg", "template_96r3llk", {
-      from_name: Form.name,
-      to_name: "Shokat",
-      from_email: Form.email,
-      to_email: "dgsjczhvzzh@gmail.com",
-      message: Form.message,
-    },
-    "XXFrRKLgI6o8fFwCS"
-  ).then(()=>{
-    setLoading(false);
-    alert("Message sent successfully!");
-    setForm({
-      name: "",
-      email: "",
-      message: "",
-    }), (error) => {
-      setLoading(false);
-      console.error("Failed to send email: ", error);}
-  })
-};
+    try {
+      setLoading(true);
+      emailjs
+        .send(
+          "service_b03043d",
+          "template_96r3llk",
+          {
+            from_name: Form.name,
+            to_name: "Shokat",
+            from_email: Form.email,
+            to_email: "dgsjczhvzzh@gmail.com",
+            message: Form.message,
+          },
+          "XXFrRKLgI6o8fFwCS"
+        )
+        .then(() => {
+          setLoading(false);
+          alert("Message sent successfully!");
+          setForm({
+            name: "",
+            email: "",
+            message: "",
+          }),
+            (error) => {
+              setLoading(false);
+              console.error("Failed to send email: ", error);
+            };
+        });
+    } catch (error) {
+      console.log(error.message);
+      
+    }
+  };
 
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">

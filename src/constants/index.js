@@ -23,8 +23,8 @@ import {
     jobit,
     tripguide,
     threejs,
+    img
   } from "../assets";
-  import {image} from "../assets/Projects/image.png"
   export const navLinks = [
     {
       id: "about",
@@ -131,8 +131,8 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: image,
-      source_code_link: "https://github.com/",
+      image: img,
+      source_code_link: "https://github.com/BUCK-web/Movie-App",
     },
     {
       name: "Job IT",
@@ -178,4 +178,4 @@ import {
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, projects };

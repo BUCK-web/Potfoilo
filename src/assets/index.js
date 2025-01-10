@@ -30,7 +30,6 @@ import img from "../assets/Projects/image.png"
 import cyberPunk from "../assets/Projects/cyberPunk.png";
 
 export {
-  cyberPunk,
   image,
   logo2,
   logo,
@@ -54,12 +53,10 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
   carrent,
   jobit,
   tripguide,
-  img
+  img,
+  cyberPunk,
+  
 };

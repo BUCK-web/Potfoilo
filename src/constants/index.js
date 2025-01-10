@@ -23,7 +23,8 @@ import {
     jobit,
     tripguide,
     threejs,
-    img
+    img,
+    cyberPunk
   } from "../assets";
   export const navLinks = [
     {
@@ -135,25 +136,25 @@ import {
       source_code_link: "https://github.com/BUCK-web/Movie-App",
     },
     {
-      name: "Job IT",
+      name: "Cyber Punk 2077",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "A Web Application with 3Js ",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "threejs",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "tailwind",
           color: "pink-text-gradient",
-        },
+        }
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: cyberPunk,
+      source_code_link: "https://github.com/BUCK-web/Cyber_Punk_3JS",
     },
     {
       name: "Trip Guide",

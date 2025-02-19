@@ -9,13 +9,21 @@ import gsap from "gsap";
 const Hero = () => {
   const ballRef = useRef(null)
   const textRef = useRef(null)  
+  const lenRef = useRef(null)
   
+
   useEffect(() => {
-    if (ballRef.current && textRef.current) {
+    if (ballRef.current && textRef.current && ComputersCanvas) {
       gsap.fromTo(
         ballRef.current,
         { opacity: 0, y: 400 },
         { delay: 1.5, opacity: 1, y: 0, duration: 2 }
+      );
+
+      gsap.fromTo(
+        lenRef.current,
+        { opacity: 0, height: 0, y: 300 },
+        { opacity: 1, height: 300, duration: 1,y: 0 }
       );
 
       gsap.fromTo(
@@ -31,7 +39,7 @@ const Hero = () => {
         <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
           <div className='flex flex-col justify-center items-center mt-5'>
             <div className='w-5 h-5  rounded-full bg-[#7764a1]' ref={ballRef}/>
-            <div className='w-1 sm:h-80 h-40 violet-gradient'/>
+            <div className='w-1 sm:h-80 h-40 violet-gradient' ref={lenRef}/>
           </div>
             <div>
               <div className='overflow-hidden'>

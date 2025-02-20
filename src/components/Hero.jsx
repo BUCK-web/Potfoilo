@@ -13,19 +13,20 @@ const Hero = () => {
   
 
   useEffect(() => {
-    if (ballRef.current && textRef.current && ComputersCanvas) {
-      gsap.fromTo(
-        ballRef.current,
-        { opacity: 0, y: 400 },
-        { delay: 1.5, opacity: 1, y: 0, duration: 2 }
-      );
-
-      gsap.fromTo(
-        lenRef.current,
-        { opacity: 0, height: 0, y: 300 },
-        { opacity: 1, height: 300, duration: 1,y: 0 }
-      );
-
+    if (ballRef.current && textRef.current && lenRef.current && ComputersCanvas) {
+      gsap.timeline()
+        .fromTo(
+          ballRef.current,
+          { opacity: 0, y: 400 },
+          { opacity: 1, y: 0, duration: 2, ease: "power2.out" }
+        )
+        .fromTo(
+          lenRef.current,
+          { opacity: 0, height: 10 ,y: 380},
+          { opacity: 1, height: 320,duration:1.5,y: 0},
+          "-=2" // This makes the animation happen simultaneously with the ball
+        );
+      
       gsap.fromTo(
         textRef.current,
         { opacity: 0, y: 200 },
@@ -33,6 +34,7 @@ const Hero = () => {
       );
     }
   }, []);
+  
 
   return (
       <section className='relative w-full h-screen mx-auto bg-hero-pattern bg-cover bg-center bg-no-repeat'>

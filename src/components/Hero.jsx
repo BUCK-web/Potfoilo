@@ -18,12 +18,12 @@ const Hero = () => {
         .fromTo(
           ballRef.current,
           { opacity: 0, y: 400 },
-          { opacity: 1, y: 0, duration: 2, ease: "power2.out" }
+          { delay:2 ,opacity: 1, y: 0, duration: 2, ease: "power2.out" }
         )
         .fromTo(
           lenRef.current,
           { opacity: 0, height: 10 ,y: 380},
-          { opacity: 1, height: 320,duration:1.5,y: 0},
+          {opacity: 1, height: 320,duration:1.5 ,y: 0},
           "-=2" // This makes the animation happen simultaneously with the ball
         );
       

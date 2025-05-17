@@ -6,12 +6,23 @@ import { github } from "../assets";
 import { SectionWrapper } from "./Hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+import { useNavigate } from "react-router-dom";
 
 
 
-const ProjectCard = ({index,name,description,tags,image,source_code_link})=>{
+const ProjectCard = ({index,name,description,tags,image,source_code_link,link})=>{
+
+  const handleClick = () => {
+    // Check if the link is an external URL
+    if (link.startsWith('http')) {
+      window.open(link, '_blank');
+    } else {
+      navigate(link);
+    }
+  };
+
   return(
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)} onClick={()=>{handleClick()}} >
       <Tilt options={{max :45,scale: 1 , speed : 450}} className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
         <div className="relative w-full h-[230px]">
           <img

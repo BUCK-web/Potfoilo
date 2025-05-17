@@ -190,8 +190,29 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: "./image.png",
+      image: "./image2.png",
       source_code_link: "https://github.com/BUCK-web/N-Mern-Tomato",
+    },
+    {
+      name: "Only Chats Realtime Chat Application",
+      description:
+      "A real-time chat application that allows users to create accounts, send messages, and join chat rooms.",
+      tags: [
+        {
+          name: "MERN",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Node.js",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Redux",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: "./image.png",
+      source_code_link: "https://github.com/BUCK-web/Realtime-Chat-app",
     },
   ];
   

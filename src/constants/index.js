@@ -133,7 +133,7 @@ import {
     {
       name: "Cyber Punk 2077",
       description:
-        "A Web Application with 3Js ",
+        "A 3D interactive web application that showcases the futuristic world of Cyberpunk 2077, allowing users to explore and interact with the environment.",
       tags: [
         {
           name: "react",
@@ -152,25 +152,46 @@ import {
       source_code_link: "https://github.com/BUCK-web/Cyber_Punk_3JS",
     },
     {
-      name: "Trip Guide",
+      name: "Morrent Car Rental App",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "A car rental web application that allows users to search for and book rental cars, view details, and manage bookings.",
       tags: [
         {
-          name: "nextjs",
+          name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "Node.js",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "Zustand",
+          color: "pink-text-gradient",
+        }
+      ],
+      image: "./image1.png",
+      source_code_link: "https://github.com/BUCK-web/Cyber_Punk_3JS",
+    },
+    {
+      name: "Tomato Food Delivery App",
+      description:
+      "A food delivery web application that allows users to browse restaurants, view menus, and place orders for delivery.",
+      tags: [
+        {
+          name: "React",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Node.js",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Redux",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: "./image.png",
+      source_code_link: "https://github.com/BUCK-web/N-Mern-Tomato",
     },
   ];
   
